@@ -29,6 +29,7 @@ we can mod each ii^ii by using bigMod and sum up each result
 
 (*)note that bigMod only takes at most min{n|ii < 2^n} steps for each ii^ii 
 ,so 1000^1000 on only takes at most 10 steps in bigMod
+
 bigMod(1000,1000,10^10) = mod(bigMod(1000,500,10^10) * bigMod(1000,500,10^10) , 10^10) 
 bigMod(1000,500,10^10) = mod(bigMod(1000,250,10^10) * bigMod(1000,250,10^10) , 10^10)
 bigMod(1000,250,10^10) = mod(bigMod(1000,125,10^10) * bigMod(1000,125,10^10) , 10^10)
