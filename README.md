@@ -23,9 +23,9 @@ bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
 bigMod(13,1,10^10) = 13 and it takes only 4 step
 while if you calculate 13^13 mod 10^10,13^13 can't be stored by the computer
 
-the target is calculate sum of ii^ii and range of ii is  1 to 1000
+the target is to calculate summation of ii^ii and range of ii is  1 to 1000
 we can mod each ii^ii by using bigMod and sum up each result
-,and we mod sum after puls each ii^ii after moduled in preventing of exceeding the integer range the computer can store.
+,and we mod summation after puls each ii^ii after moduled in preventing of exceeding the integer range the computer can store.
 
 (*)note that bigMod only takes at most min{n|ii < 2^n} steps for each ii^ii 
 ,so 1000^1000 on only takes at most 10 steps in bigMod
