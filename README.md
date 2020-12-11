@@ -28,7 +28,7 @@ we can mod each ii^ii by using bigMod and sum up each result
 ,and we mod sum after puls each ii^ii after moduled in preventing of exceeding the integer range the computer can store.
 
 (*)note that bigMod only takes at most min{n|ii < 2^n} steps for each ii^ii 
-,so 1000^1000 on only take 10 steps in bigMod
+,so 1000^1000 on only take at most 10 steps in bigMod
 bigMod(1000,1000,10^10) = mod(bigMod(1000,500,10^10) * bigMod(1000,500,10^10) , 10^10) 
 bigMod(1000,500,10^10) = mod(bigMod(1000,250,10^10) * bigMod(1000,250,10^10) , 10^10)
 bigMod(1000,250,10^10) = mod(bigMod(1000,125,10^10) * bigMod(1000,125,10^10) , 10^10)
