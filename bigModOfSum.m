@@ -15,9 +15,9 @@ function y = bigMod(target,exp,modNum) %it's a recursive function
     else 
         y = bigMod(target,floor(exp/2),modNum); %this will be used later
         if mod(exp,2) == 1
-            y = mod(bigMul(bigMul(y,y,modNum) , target,modNum),modNum); %if exp is an odd number, multiply target ^ floor(exp/2) two time 
+            y = bigMul(bigMul(y,y,modNum) , target,modNum); %if exp is an odd number, multiply target ^ floor(exp/2) two time 
         else                                % and multiply target,then mod 10^10. ex:11^11 = 11^5 * 11^5 * 11
-            y = mod(bigMul(y,y,modNum),modNum);          %if exp is an odd number, multiply target ^ floor(exp/2) two time 
+            y = bigMul(y,y,modNum);          %if exp is an odd number, multiply target ^ floor(exp/2) two time 
         end                                 % ex:10^10 = 10^5 * 10^5
     end
 end
