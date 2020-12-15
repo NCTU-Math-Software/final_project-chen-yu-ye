@@ -20,5 +20,20 @@ function y = bigMod(target,exp,modNum) %it's a recursive function
         end                                 % ex:10^10 = 10^5 * 10^5
     end
 end
+
+function y = bigMul(mul1,mul2)
+    if mul2 == 0
+        y = 0;
+    elseif mul2 == 1 
+        y = mul1;
+    else 
+        y = bigMul(target,mu2); 
+        if mod(mul2,2) == 1
+            y = mod(y + y + mul1,modNum); 
+        else                                
+            y = mod(y + y,modNum);          
+        end                                 
+    end
+end
         
 
