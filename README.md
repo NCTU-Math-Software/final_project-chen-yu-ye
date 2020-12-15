@@ -40,3 +40,11 @@ bigMod(1000,15,10^10) = mod(bigMod(1000,7,10^10) * bigMod(1000,7,10^10) * 1000 ,
 bigMod(1000,7,10^10) = mod(bigMod(1000,3,10^10) * bigMod(1000,3,10^10) * 1000 , 10^10)
 bigMod(1000,3,10^10) = mod(bigMod(1000,1,10^10) * bigMod(1000,1,10^10) * 1000 , 10^10)
 bigMod(1000,1,10^10) = 1000
+
+the concept of bigMul is same as bigMod
+since when two number multiple each other, the result might be wrong since it exceeds the range ex: y * y > 10^19 might happen in bigMod without bigMul
+since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10  
+
+in this program, we can check 1^1+2^2...+10^10 % 10^10 has the same result as normal compute way
+and 1^1+2^2...+15^15 has different result compared to the program don't use bigMul0.If we use c++ to calculate, the result is same as the one has bigMul
+as long as there is no other problem, the final result should be right
