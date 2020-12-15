@@ -54,4 +54,4 @@ previous one has result of 4130199828 ,and the next one has the result of 413019
 and verified by using c++, the result is also 4130199828
 
 the final result should be right,since we excluse any compute problem,and use a right way to get the result 
-(*)magically, in this program, we don't have any multiplication expect 10^10, so it greatly adds the probability of correctness
+(*)magically, in this program, we don't use any multiplication , so it greatly adds the probability of correctness
