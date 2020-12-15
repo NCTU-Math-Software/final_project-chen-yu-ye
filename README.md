@@ -43,8 +43,15 @@ bigMod(1000,1,10^10) = 1000
 
 the concept of bigMul is same as bigMod
 since when two number multiple each other, the result might be wrong since it exceeds the range ex: y * y > 10^19 might happen in bigMod without bigMul
-since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10  
+(*) when we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong
+(checking by using format bank)
+
+since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely 
 
 in this program, we can check 1^1+2^2...+10^10 % 10^10 has the same result as normal compute way
-and 1^1+2^2...+15^15 has different result compared to the program don't use bigMul0.If we use c++ to calculate, the result is same as the one has bigMul
-as long as there is no other problem, the final result should be right
+and 1^1+2^2...+15^15 has different result compared to the program don't use bigMul0.
+previous one has result of 4130199828 ,and the next one has the result of 4130199845,which is impossible since the last digit must be even
+and verified by using c++, the result is also 4130199828
+
+the final result should be right,since we excluse any compute problem,and use a right way to get the result 
+(*)magically, in this program, we don't have any multiplication expect 10^10, so it greatly adds the probability of correctness
