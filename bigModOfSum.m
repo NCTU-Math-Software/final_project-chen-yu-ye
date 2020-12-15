@@ -1,6 +1,6 @@
 format long g
 sum = 0; %reset sum
-for ii = 1:15
+for ii = 1:17
     sum = sum + bigMod(ii,ii,10^10); %sum up each ii^ii after bigMod
     sum = mod(sum,10^10); %let the final result be last 10 digits
 end
@@ -36,4 +36,3 @@ function y = bigMul(mul1,mul2,modNum)
         end                                 
     end
 end
-
