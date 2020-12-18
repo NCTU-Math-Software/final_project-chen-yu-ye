@@ -75,7 +75,7 @@ This function can verify if the result meets the expectation in certain situatio
 1^1 is odd, 1^1 + 2^2 is odd, 1^1 + 2^2 + 3^3 is even,  1^1 + 2^2 + 3^3 + 4^4 is even.. odd,odd,even,even,odd,odd.
 That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
 
-## ramark
+## remark
 By assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
 If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0
 
