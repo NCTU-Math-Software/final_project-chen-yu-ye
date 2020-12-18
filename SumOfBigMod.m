@@ -1,7 +1,7 @@
 format long g
 num = 1000;
 disp(expSeries(num))
-verify(0,1000) %this might take time to run if verified number goes big
+verification(0,1000) %this might take time to run if verified number goes big
 
 function y = expSeries(max)
     sum = 0;
@@ -12,15 +12,15 @@ function y = expSeries(max)
     y = sum;
 end
 
-function y = bigMod(target,exp,modNum)
+function y = bigMod(base,exp,modNum)
     if exp == 0 
         y = 1;
     elseif exp == 1 
-        y = target;
+        y = base;
     else 
-        y = bigMod(target,floor(exp/2),modNum); 
+        y = bigMod(base,floor(exp/2),modNum); 
         if mod(exp,2) == 1
-            y = bigMul(bigMul(y,y,modNum) , target,modNum); 
+            y = bigMul(bigMul(y,y,modNum) , base,modNum); 
         else                            
             y = bigMul(y,y,modNum);       
         end                                 
@@ -42,7 +42,7 @@ function y = bigMul(mul1,mul2,modNum)
     end
 end
 
-function verify(from,to)
+function verification(from,to)
     correctness = 1;
     for ii = from : to
         if mod(ii,4) == 1 | mod(ii,4) == 2
