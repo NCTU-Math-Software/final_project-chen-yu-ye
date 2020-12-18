@@ -16,10 +16,15 @@ if exp is an even number, multiply base ^ floor(exp/2) two time will equal to or
 ex:13^6 = 13^3 * 100^3
 
 the following is an example of simulating mod(13^13,10^10) by bigMod method:
+
 bigMod(13,13,10^10) = mod(bigMod(13,6,10^10) * bigMod(13,6,10^10) , 10^10)
+
 bigMod(13,6,10^10) = mod(bigMod(13,3,10^10) * bigMod(13,3,10^10) , 10^10)
+
 bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
+
 bigMod(13,1,10^10) = 13 
+
 
 the goal of this program is to calculate summation of ii^ii ,and the range of ii is 1 to 1000
 so we mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
