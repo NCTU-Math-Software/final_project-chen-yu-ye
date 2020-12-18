@@ -1,5 +1,6 @@
 # final_project-chen-yu-ye
 final_project-chen-yu-ye created by GitHub Classroom
+***
 # Main purpose of theprogram
 
 Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000
