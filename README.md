@@ -27,7 +27,6 @@ bigMod(13,1,10^10) = 13
 
 
 the goal of this program is to calculate summation of ii^ii ,and the range of ii is 1 to 1000
-
 , so we mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
 
 
@@ -45,7 +44,6 @@ since in bigMod, when two number multiple each other, the result might be wrong 
 example:
 
 when we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong
-
 since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely 
 
 
@@ -53,11 +51,8 @@ since we have bigMul, in the process of this program, there is no number exceeds
 [correctness checking]
 
 in this program, we can check that 1^1+2^2...+10^10 % 10^10 has the same result by derectly computing
-
 but and 1^1+2^2...+15^15 has different result compared to the program that don't use bigMul
-
 previous one has result of 4130199828 ,and the next one has the result of 4130199845,which is impossible since the last digit must be even
-
 verified by using c++, the result is also 4130199828
 
 
@@ -67,9 +62,6 @@ verified by using c++, the result is also 4130199828
 this function can verify if the result meets the expectation in certain situation
 
 concept:
-
 1^1 is odd, 1^1 + 2^2 is odd, 1^1 + 2^2 + 3^3 is even,  1^1 + 2^2 + 3^3 + 4^4 is even.. odd,odd,even,even,odd,odd
-
 that is , result is odd when we add up to the number module 4 = 1 or 2, even otherwhise
-
 it also greatly adds up the probability of correctness of the program
