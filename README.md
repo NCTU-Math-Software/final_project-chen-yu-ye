@@ -4,15 +4,19 @@ final_project-chen-yu-ye created by GitHub Classroom
 [explaining of the recursive function bigMod]
 
 if exp(exponential) is 0 bigMod(base,0,modNum) = 1
+
 ex:13^0 = 1
 
 if exp is 1 then bigMod(base,1,modNum) = base
+
 ex:13^1 = 13
 
 if exp is an odd number, multiply base ^ floor(exp/2) two time and multiply base will equal to origin number
+
 ex:13^13 = 13^6 * 13^6 * 13 
 
 if exp is an even number, multiply base ^ floor(exp/2) two time will equal to origin number
+
 ex:13^6 = 13^3 * 100^3
 
 the following is an example of simulating mod(13^13,10^10) by bigMod method:
