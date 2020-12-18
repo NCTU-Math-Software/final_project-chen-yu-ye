@@ -62,7 +62,9 @@ Since we have bigMul, in the process of this program, there is no number exceeds
 
 In this program, we can check that 1^1+2^2...+10^10 % 10^10 has the same result by derectly computing
 ,but 1^1+2^2...+15^15 has different result compared to the program that don't use bigMul.
-Previous one has result of 4130199828 ,and the next one has the result of 4130199845,which is impossible since the last digit must be even.
+
+Previous one has result of 4130199828 ,and the other one has the result of 4130199845, which is impossible since the last digit must be even.
+
 Verified by using c++, the result is also 4130199828.
 
 ***
