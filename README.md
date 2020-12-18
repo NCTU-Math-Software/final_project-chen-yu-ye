@@ -7,7 +7,7 @@ Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000.
 ***
 # Main concept of the program
 
-Just add them up.
+Just add them up, but by a special way.
 ***
 # Explaining of the recursive function "bigMod"
 
