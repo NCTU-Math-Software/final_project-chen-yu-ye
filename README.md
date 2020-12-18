@@ -36,7 +36,7 @@ bigMod(13,6,10^10) = mod(bigMod(13,3,10^10) * bigMod(13,3,10^10) , 10^10)
 bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
 
 bigMod(13,1,10^10) = 13 
-
+```
 
 The goal of this program is to calculate summation of ii^ii ,which is in range of 1 to 1000.
 We mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
@@ -74,7 +74,7 @@ This function can verify if the result meets the expectation in certain situatio
 ## Concept
 1^1 is odd, 1^1 + 2^2 is odd, 1^1 + 2^2 + 3^3 is even,  1^1 + 2^2 + 3^3 + 4^4 is even.. odd,odd,even,even,odd,odd.
 That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
-'''
+
 (By assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
 If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0)
-'''
+
