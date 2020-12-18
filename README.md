@@ -1,7 +1,7 @@
 # final_project-chen-yu-ye
 final_project-chen-yu-ye created by GitHub Classroom
 
-[explaining of the recursive function "bigMod"]
+[Explaining of the recursive function "bigMod"]
 
 If exp(exponential) is 0 ,we have bigMod(base,0,modNum) = 1
 
