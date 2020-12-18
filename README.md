@@ -30,9 +30,11 @@ the goal of this program is to calculate summation of ii^ii ,and the range of ii
 so we mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
 
 
+
 [explaining of the recursive function bigMul]
 
 the concept of bigMul is same as bigMod
+
 
 
 [why we need the function bigMul?]
@@ -44,12 +46,14 @@ when we calculate 10000001^2, we get 100000020000001 which is obviously right,bu
 since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely 
 
 
+
 [correctness checking]
 
 in this program, we can check 1^1+2^2...+10^10 % 10^10 has the same result as normal compute way
 and 1^1+2^2...+15^15 has different result compared to the program that don't use bigMul
 previous one has result of 4130199828 ,and the next one has the result of 4130199845,which is impossible since the last digit must be even
 and verified by using c++, the result is also 4130199828
+
 
 
 [explaining of the function verification]
