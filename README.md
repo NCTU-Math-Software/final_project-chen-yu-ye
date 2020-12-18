@@ -79,5 +79,5 @@ That is , the result is odd when we add up to the number module 4 = 1 or 2, even
 
 ## remark
 By assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
-If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0
+If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
 
