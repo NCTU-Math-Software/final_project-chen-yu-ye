@@ -40,6 +40,7 @@ the concept of bigMul is same as bigMod
 [why we need the function bigMul?]
 
 since in bigMod, when two number multiple each other, the result might be wrong since it exceeds the range ex: y * y > 10^19 might happen in bigMod without bigMul
+
 [example]
 
 when we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong
