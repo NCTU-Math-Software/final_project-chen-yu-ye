@@ -7,7 +7,7 @@ Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000.
 ***
 # Main concept of the program
 
-Add each ii^ii module 10^10 from 1 to 1000.
+Add each ii^ii module 10^10 ,which the range of ii is from 1 to 1000.
 ***
 # The recursive function "bigMod"
 
