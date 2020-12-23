@@ -90,6 +90,6 @@ This function can verify if the result meets the expectation in certain situatio
 That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
 
 ## Remark
-Assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
-If the chosen range has n numbers. the possibility that wrong results can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
+Assuming the program has a wrong result in certain number of summing up, then the result has the same probability be an even number or an odd number,which is 1/2.
+If the chosen verified range has n numbers. the possibility that wrong results can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
 
