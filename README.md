@@ -7,7 +7,7 @@ Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000.
 ***
 # Main concept of the program
 
-Add each ii^ii module 10^10 ,which the range of ii is from 1 to 1000.
+Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
 ***
 # The recursive function "bigMod"
 
@@ -87,7 +87,7 @@ This function can verify if the result meets the expectation in certain situatio
 
 ## Concept
 1^1 is an odd number, 1^1 + 2^2 is an odd number, 1^1 + 2^2 + 3^3 is an even number,  1^1 + 2^2 + 3^3 + 4^4 is an even number, odd number,odd number ,even number,even number...
-That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
+That is , the result is odd when we add up to the number mod 4 = 1 or 2, even otherwhise.
 
 ## Remark
 Assuming the program has a wrong result in certain number of summing up, then the result has the same probability be an even number or an odd number,which is 1/2.
