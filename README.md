@@ -17,19 +17,19 @@ if a = b*c, then mod(a,10^10) = mod(b,10^10) * mod(c,10^10)
 
 ## Concept
 
-If exp(exponential) is 0 ,we have bigMod(base,0,modNum) = 1
+If exp(exponential) is 0 ,return 1
 
 > EX:13^0 = 1
 
-If exp is 1 ,we have bigMod(base,1,modNum) = base
+If exp is 1 ,return base
 
 > EX:13^1 = 13
 
-If exp is an odd number, multiply base ^ floor(exp/2) two time and multiply base will equal to origin number.
+If exp is an odd number, return base ^ floor(exp/2) ^ 2 * base.
 
 > EX:13^13 = 13^6 * 13^6 * 13 
 
-If exp is an even number, multiply base ^ floor(exp/2) two time will equal to origin number.
+If exp is an even number, return base ^ floor(exp/2) ^ 2.
 
 > EX:13^6 = 13^3 * 100^3
 
@@ -45,6 +45,10 @@ bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
 bigMod(13,1,10^10) = 13 
 ```
 
+## Why we need the function "bigMod"?
+
+Since if you derectly do mod(1000^1000,10^10), you will get a wrong result caused by exceeding range of an integer can be stored. 
+
 ***
 
 # The recursive function "bigMul"
@@ -59,14 +63,14 @@ if a = b+c, then mod(a,10^10) = mod(b,10^10) + mod(c,10^10)
 
 ## Why we need the function "bigMul"?
 
-Since in bigMod, when two number multiple each other, the result might be wrong since it exceeds the range. 
+Since in bigMod, when two number multiple each other, the result might be too big for computer can handle.
 
 When we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong.
 
-Since we have bigMul, in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely .
+Since we have "bigMul", in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely .
 
 ***
-# Correctness checking
+# Correctness checking of small numbers
 
 In this program, we can check that 1^1+2^2...+10^10 % 10^10 has the same result by derectly computing
 ,but 1^1+2^2...+15^15 has different result compared to the program that don't use bigMul.
@@ -87,5 +91,5 @@ That is , the result is odd when we add up to the number module 4 = 1 or 2, even
 
 ## Remark
 By assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
-If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
+If the chosen range has n numbers. the possibility that wrong results can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
 
