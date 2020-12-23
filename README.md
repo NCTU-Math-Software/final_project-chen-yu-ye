@@ -86,7 +86,7 @@ This function can verify if the result meets the expectation in certain situatio
 (User can choose the verified range.)
 
 ## Concept
-1^1 is odd, 1^1 + 2^2 is odd, 1^1 + 2^2 + 3^3 is even,  1^1 + 2^2 + 3^3 + 4^4 is even.. odd,odd,even,even,odd,odd.
+1^1 is an odd number, 1^1 + 2^2 is an odd number, 1^1 + 2^2 + 3^3 is an even number,  1^1 + 2^2 + 3^3 + 4^4 is an even number, odd number,odd number ,even number,even number...
 That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
 
 ## Remark
