@@ -1,7 +1,7 @@
 format long g
 num = 1000;
 disp(expSeries(num))
-verification(0,1000) %this might take time to run if verified number goes big
+verify(990,1000) %this might take time to run if verified number goes big
 
 function y = expSeries(max)
     sum = 0;
@@ -12,15 +12,15 @@ function y = expSeries(max)
     y = sum;
 end
 
-function y = bigMod(base,exp,modNum)
+function y = bigMod(target,exp,modNum)
     if exp == 0 
         y = 1;
     elseif exp == 1 
-        y = base;
+        y = target;
     else 
-        y = bigMod(base,floor(exp/2),modNum); 
+        y = bigMod(target,floor(exp/2),modNum); 
         if mod(exp,2) == 1
-            y = bigMul(bigMul(y,y,modNum) , base,modNum); 
+            y = bigMul(bigMul(y,y,modNum) , target,modNum); 
         else                            
             y = bigMul(y,y,modNum);       
         end                                 
@@ -42,8 +42,9 @@ function y = bigMul(mul1,mul2,modNum)
     end
 end
 
-function verification(from,to)
+function verify(from,to)
     correctness = 1;
+    A = (1 - 1 / (from-to+1)^2 )*100;
     for ii = from : to
         if mod(ii,4) == 1 | mod(ii,4) == 2
             if mod(expSeries(ii),2) == 0
@@ -60,6 +61,8 @@ function verification(from,to)
     if correctness == 0
         warning("the result must be wrong")
     else
-        disp("verification passed")
+        disp("Verification passed.")
+        B = ['The possibility that you get a correct result is ',num2str(A,'%.5f'),'%.'];
+        disp(B)
     end
 end
