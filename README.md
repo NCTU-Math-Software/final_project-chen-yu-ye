@@ -9,10 +9,13 @@ Find the last 10 digit of $1^1 + 2^2 + 3^3... + 1000^1000$.
 
 Add each ii^ii module 10^10 from 1 to 1000.
 ***
-# Explaining of the recursive function "bigMod"
+# The recursive function "bigMod"
 
 ## Remark
+
 if a = b*c, then mod(a,10^10) = mod(b,10^10) * mod(c,10^10)
+
+## Concept
 
 If exp(exponential) is 0 ,we have bigMod(base,0,modNum) = 1
 
@@ -30,7 +33,8 @@ If exp is an even number, multiply base ^ floor(exp/2) two time will equal to or
 
 > EX:13^6 = 13^3 * 100^3
 
-The following is an example of simulating mod(13^13,10^10) by "bigMod" function:
+## Example
+
 ```
 bigMod(13,13,10^10) = mod(bigMod(13,6,10^10) * bigMod(13,6,10^10) , 10^10)
 
@@ -41,24 +45,21 @@ bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
 bigMod(13,1,10^10) = 13 
 ```
 
-The goal of this program is to calculate summation of ii^ii ,which is in range of 1 to 1000.
-We mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
-
 ***
 
-# Explaining of the recursive function "bigMul"
+# The recursive function "bigMul"
+
+## Concept
 
 The concept of bigMul is same as bigMod.
 
 ## Remark
+
 if a = b+c, then mod(a,10^10) = mod(b,10^10) + mod(c,10^10)
 
-***
-# Why we need the function "bigMul"?
+## Why we need the function "bigMul"?
 
 Since in bigMod, when two number multiple each other, the result might be wrong since it exceeds the range. 
-
-## Example
 
 When we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong.
 
