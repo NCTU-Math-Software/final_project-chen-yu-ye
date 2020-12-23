@@ -7,9 +7,12 @@ Find the last 10 digit of $1^1 + 2^2 + 3^3... + 1000^1000$.
 ***
 # Main concept of the program
 
-Just add them up, but by a special way.
+Add each ii^ii module 10^10 from 1 to 1000.
 ***
 # Explaining of the recursive function "bigMod"
+
+## Remark
+if a = b*c, then mod(a,10^10) = mod(b,10^10) * mod(c,10^10)
 
 If exp(exponential) is 0 ,we have bigMod(base,0,modNum) = 1
 
@@ -40,11 +43,15 @@ bigMod(13,1,10^10) = 13
 
 The goal of this program is to calculate summation of ii^ii ,which is in range of 1 to 1000.
 We mod summation after plusing each ii^ii in preventing of exceeding the integer range the computer can store.
+
 ***
 
 # Explaining of the recursive function "bigMul"
 
 The concept of bigMul is same as bigMod.
+
+## Remark
+if a = b+c, then mod(a,10^10) = mod(b,10^10) + mod(c,10^10)
 
 ***
 # Why we need the function "bigMul"?
@@ -77,7 +84,7 @@ This function can verify if the result meets the expectation in certain situatio
 1^1 is odd, 1^1 + 2^2 is odd, 1^1 + 2^2 + 3^3 is even,  1^1 + 2^2 + 3^3 + 4^4 is even.. odd,odd,even,even,odd,odd.
 That is , the result is odd when we add up to the number module 4 = 1 or 2, even otherwhise.
 
-## remark
+## Remark
 By assuming the program has a wrong result, then the result has a probability be an even number of 1/2,so does an odd number.
 If the chosen range has n numbers. the possibility of wrong result can pass the verification is 1/2^n, when n goes big, the prosibility goes 0.
 
