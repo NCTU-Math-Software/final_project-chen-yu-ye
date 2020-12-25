@@ -70,7 +70,7 @@ When we calculate 10000001^2, we get 100000020000001 which is obviously right,bu
 Since we have "bigMul", in the process of this program, there is no number exceeds 2 * 10^10 ,and each step can be calculated precisely .
 
 ***
-# Correctness checking of small numbers
+# Correctness checking for small numbers
 
 In this program, we can check that 1^1+2^2...+10^10 % 10^10 has the same result by derectly computing
 ,but 1^1+2^2...+15^15 has different result compared to the program that don't use bigMul.
