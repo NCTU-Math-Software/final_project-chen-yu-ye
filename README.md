@@ -63,7 +63,7 @@ if a = b+c, then mod(a,10^10) = mod(b,10^10) + mod(c,10^10)
 
 ## Why we need the function "bigMul"?
 
-In bigMod, when two number multiple each other, the result might be too big for computer can handle.
+In bigMod, when two number multiply each other, the result might be too big for computer can handle.
 
 When we calculate 10000001^2, we get 100000020000001 which is obviously right,but when calculate 100000001^2, we get 10000000200000000 which is obviously wrong.
 
