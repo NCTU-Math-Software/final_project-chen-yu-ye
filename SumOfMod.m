@@ -43,8 +43,13 @@ function y = bigMul(mul1,mul2,modNum)
 end
 
 function verify(from,to)
+    if from > to
+        temp = from;
+        from = to;
+        to = temp;
+    end   
     correctness = 1;
-    A = (1 - 1 / 2^(to-from+1) )*100;
+    A = (1 - 1 / 2^(abs(to-from)+1) )*100;
     for ii = from : to
         if mod(ii,4) == 1 | mod(ii,4) == 2
             if mod(expSeries(ii),2) == 0
