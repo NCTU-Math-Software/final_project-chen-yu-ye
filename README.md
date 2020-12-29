@@ -13,7 +13,7 @@ Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
 
 ## How to use the program
 
-Users can choose the final number the sequence adds up to by modifing num.
+Users can choose the final number the sequence adds up to by modifing the varible "num".
 Users can choose verification range by modifing first virable and second virable of the function "vefify".
 Users can use the program by clicking the run button(F5).
 
