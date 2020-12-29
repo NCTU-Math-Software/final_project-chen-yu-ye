@@ -63,6 +63,8 @@ bigMod(13,6,10^10) = mod(bigMod(13,3,10^10) * bigMod(13,3,10^10) , 10^10)
 bigMod(13,3,10^10) = mod(bigMod(13,1,10^10) * bigMod(13,1,10^10) * 13 , 10^10)
 
 bigMod(13,1,10^10) = 13 
+
+The final result is 5106592253.
 ```
 
 ## Why we need the function "bigMod"?
