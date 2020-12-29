@@ -44,7 +44,7 @@ end
 
 function verify(from,to)
     correctness = 1;
-    A = (1 - 1 / (from-to+1)^2 )*100;
+    A = (1 - 1 / 2^(to-from+1) )*100;
     for ii = from : to
         if mod(ii,4) == 1 | mod(ii,4) == 2
             if mod(expSeries(ii),2) == 0
