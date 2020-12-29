@@ -104,6 +104,7 @@ Verified by using c++, the result is also 4130199828.
 ***
 # The additional function "verify"
 
+## purpose
 This function can verify if the result meets the expectation in certain situation
 (User can choose the verified range.)
 
