@@ -19,7 +19,7 @@ Users can choose verification range by modifing first virable and second virable
 
 Users can use the program by clicking the run button(F5).
 
-## Example of output of the program 
+## Example
 When num = 1000,and the verification range is from 990 to 1000.
 The following is the output.
 ```
