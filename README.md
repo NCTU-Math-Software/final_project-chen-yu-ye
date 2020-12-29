@@ -105,7 +105,7 @@ Verified by using c++, the result is also 4130199828.
 # The additional function "verify"
 
 ## purpose
-This function can verify if the result meets the expectation in certain situation
+This function can verify if the result meets the expectation for certain situation.
 (The user can choose the verified range.)
 
 ## Concept
