@@ -1,5 +1,5 @@
 # final_project- Sum of mod
-final_project-chen-yu-ye created by GitHub Classroom
+final_project-Sum of mod created by GitHub Classroom
 ***
 # About the program
 
