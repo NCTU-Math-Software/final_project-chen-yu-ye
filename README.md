@@ -3,11 +3,11 @@ final_project-Sum of mod created by GitHub Classroom
 ***
 # About the program
 
-## Main purpose of the program
+## Purpose
 
 Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000.
 
-## Main concept of the program
+## Concept
 
 Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
 
