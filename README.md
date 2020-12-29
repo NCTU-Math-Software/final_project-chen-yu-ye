@@ -1,13 +1,21 @@
-# final_project-chen-yu-ye
+# final_project- Sum of mod
 final_project-chen-yu-ye created by GitHub Classroom
 ***
-# Main purpose of the program
+# About the program
+
+## Main purpose of the program
 
 Find the last 10 digit of 1^1 + 2^2 + 3^3... + 1000^1000.
-***
-# Main concept of the program
+
+## Main concept of the program
 
 Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
+
+## How to use the program
+
+Users can choose the final number the sequence adds up to by modifing num.
+Users can choose verification range by modifing first virable and second virable of the function "[link text][a]vefify".
+
 ***
 # The recursive function "bigMod"
 
@@ -80,7 +88,7 @@ Previous one has result of 4130199828 ,and the other one has the result of 41301
 Verified by using c++, the result is also 4130199828.
 
 ***
-# Explaining of the function "verification"
+[a]# The additional function "verification"
 
 This function can verify if the result meets the expectation in certain situation
 (User can choose the verified range.)
