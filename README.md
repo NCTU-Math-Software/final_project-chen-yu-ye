@@ -102,7 +102,7 @@ Previous one has result of 4130199828 ,and the other one has the result of 41301
 Verified by using c++, the result is also 4130199828.
 
 ***
-# The additional function "verification"
+# The additional function "verify"
 
 This function can verify if the result meets the expectation in certain situation
 (User can choose the verified range.)
