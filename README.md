@@ -21,7 +21,7 @@ The user can use the program by clicking the run button(F5).
 
 ## Example
 When num = 1000,and the verification range is from 990 to 1000.
-The following is the output.
+The following text is the output.
 ```
 The answer is 9110846700
  
