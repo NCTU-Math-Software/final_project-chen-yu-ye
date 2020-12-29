@@ -13,11 +13,11 @@ Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
 
 ## How to use the program
 
-Users can choose the final number the sequence adds up to by modifing the varible "num".
+The user can choose the final number the sequence adds up to by modifing the varible "num".
 
-Users can choose verification range by modifing first virable and second virable of the function "verify".
+The user can choose verification range by modifing first virable and second virable of the function "verify".
 
-Users can use the program by clicking the run button(F5).
+The user can use the program by clicking the run button(F5).
 
 ## Example
 When num = 1000,and the verification range is from 990 to 1000.
@@ -106,7 +106,7 @@ Verified by using c++, the result is also 4130199828.
 
 ## purpose
 This function can verify if the result meets the expectation in certain situation
-(User can choose the verified range.)
+(The user can choose the verified range.)
 
 ## Concept
 1^1 is an odd number, 1^1 + 2^2 is an odd number, 1^1 + 2^2 + 3^3 is an even number,  1^1 + 2^2 + 3^3 + 4^4 is an even number, odd number,odd number ,even number,even number...
