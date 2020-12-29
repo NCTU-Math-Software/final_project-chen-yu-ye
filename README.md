@@ -14,7 +14,7 @@ Add each ii^ii mod 10^10 ,which the range of ii is from 1 to 1000.
 ## How to use the program
 
 Users can choose the final number the sequence adds up to by modifing num.
-Users can choose verification range by modifing first virable and second virable of the function "[link text][a]vefify".
+Users can choose verification range by modifing first virable and second virable of the function "[a]vefify".
 
 ***
 # The recursive function "bigMod"
